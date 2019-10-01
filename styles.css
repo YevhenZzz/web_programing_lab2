@@ -1,0 +1,88 @@
+body { background: url(eminem_back.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    margin: 10px;
+}
+
+.tag {
+    color: darkred; /* Цвет текста */
+    font-family: monospace; /* Моношириный шрифт */
+    quotes: "<" ">"; /* Устанавливаем вид кавычек */
+}
+
+.tag:before {
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку */
+}
+
+.tag:after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку */
+}
+
+.dws-menu* {
+    padding: 0;
+    margin: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol{
+    list-style: none;
+}
+
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.dws-menu > ul li a{
+    display: block;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.dws-menu > ul li {
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.dws-menu > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+}
+.dws-menu > li a:hover {
+    background: #454547;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+.dws-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.dws-menu li> ul li {
+    border: 1px solid #c7c8ca;
+    position: center; left: -45px;
+}
+.dws-menu lu > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.dws-menu li:hover > ul{
+    display: block;
+}
